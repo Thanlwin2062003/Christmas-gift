@@ -1,0 +1,103 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    background-color: #2c3e50;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+}
+
+.card {
+    background: #34495e;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    width: 80%;
+    max-width: 500px;
+}
+
+.tree {
+    position: relative;
+    margin: 20px auto;
+    width: 80px;
+}
+
+.star {
+    font-size: 24px;
+    color: gold;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+}
+
+.layer {
+    background: #27ae60;
+    margin: 10px auto;
+    height: 20px;
+    width: 0px;
+    border-radius: 5px;
+}
+
+.layer:nth-child(3) { width: 20px; } 
+.layer:nth-child(4) { width: 40px; }
+.layer:nth-child(5) { width: 60px; }
+.layer:nth-child(6) { width: 80px; }
+
+.trunk {
+    background: #8e5e3c;
+    height: 20px;
+    width: 20px;
+    margin: 0 auto;
+    border-radius: 3px;
+}
+
+.message h1 {
+    color: #ecf0f1;
+    margin-bottom: 10px;
+}
+
+.message p {
+    font-size: 16px;
+    margin: 15px 0;
+    color: #bdc3c7;
+}
+
+button {
+    padding: 10px 20px;
+    background: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #c0392b;
+}
+
+.hidden {
+    display: none;
+}
+
+#gift {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #f39c12;
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
